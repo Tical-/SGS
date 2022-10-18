@@ -1,0 +1,23 @@
+﻿<Window x:Class="SGSTestProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGSTestProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Цех" HorizontalAlignment="Left" Margin="31,19,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="City" HorizontalAlignment="Left" Margin="31,50,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="City_SelectionChanged"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="193,19,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="WorkShop" HorizontalAlignment="Left" Margin="193,50,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="WorkShop_SelectionChanged"/>
+        <Label Content="Сотрудник" HorizontalAlignment="Left" Margin="362,19,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Employee" HorizontalAlignment="Left" Margin="362,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Бригада" HorizontalAlignment="Left" Margin="31,142,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Brig" HorizontalAlignment="Left" Margin="32,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Смена" HorizontalAlignment="Left" Margin="209,142,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Smen" HorizontalAlignment="Left" Margin="215,171,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Res" HorizontalAlignment="Left" Margin="32,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="592" Height="106"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="437,171,0,0" VerticalAlignment="Top" Height="22" Width="79" Click="Button_Click"/>
+    </Grid>
+</Window>
